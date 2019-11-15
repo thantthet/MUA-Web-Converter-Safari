@@ -157,6 +157,7 @@
 				900C41B3237E96E50042EBE9 /* Frameworks */,
 				900C41B4237E96E50042EBE9 /* Resources */,
 				900C41E3237E96E60042EBE9 /* Embed App Extensions */,
+				900C41F9237EE5800042EBE9 /* Set Bundle Version */,
 			);
 			buildRules = (
 			);
@@ -246,6 +247,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		900C41F9237EE5800042EBE9 /* Set Bundle Version */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Set Bundle Version";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "SHORT_VERSION=$(git describe --dirty | sed -e 's/^v//' -e 's/g//')\nVERSION=$(git log --oneline | wc -l | sed -e 's/[ \\t]*//g')\n\n/usr/libexec/PlistBuddy -c \"Set :CFBundleShortVersionString ${SHORT_VERSION}\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion ${VERSION}\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		900C41B2237E96E50042EBE9 /* Sources */ = {
