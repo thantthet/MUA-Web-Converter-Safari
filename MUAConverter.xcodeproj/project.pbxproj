@@ -179,6 +179,7 @@
 				900C41C5237E96E60042EBE9 /* Sources */,
 				900C41C6237E96E60042EBE9 /* Frameworks */,
 				900C41C7237E96E60042EBE9 /* Resources */,
+				90FA996C237F2DFA0023CEEB /* Set Bundle Version */,
 			);
 			buildRules = (
 			);
@@ -269,7 +270,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "SHORT_VERSION=$(git describe --dirty | sed -e 's/^v//' -e 's/g//')\nVERSION=$(git log --oneline | wc -l | sed -e 's/[ \\t]*//g')\n\n/usr/libexec/PlistBuddy -c \"Set :CFBundleShortVersionString ${SHORT_VERSION}\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion ${VERSION}\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\n";
+			shellScript = "SHORT_VERSION=$(git describe --dirty | sed -e 's/^v//' -e 's/g//')\nVERSION=$(git log --oneline | wc -l | sed -e 's/[ \\t]*//g')\n\n/usr/libexec/PlistBuddy -c \"Set :CFBundleShortVersionString ${SHORT_VERSION}\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion ${VERSION}\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\n\n";
+		};
+		90FA996C237F2DFA0023CEEB /* Set Bundle Version */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Set Bundle Version";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "SHORT_VERSION=$(git describe --dirty | sed -e 's/^v//' -e 's/g//')\nVERSION=$(git log --oneline | wc -l | sed -e 's/[ \\t]*//g')\n\n/usr/libexec/PlistBuddy -c \"Set :CFBundleShortVersionString ${SHORT_VERSION}\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion ${VERSION}\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\n\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
