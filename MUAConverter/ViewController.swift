@@ -15,7 +15,7 @@ class ViewController: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.appNameLabel.stringValue = "MUAConverter";
+        self.appNameLabel.stringValue = "Click the button below to enable MUA extension in Safari to use. You can quite this app after extension is enabled.";
     }
     
     @IBAction func openSafariExtensionPreferences(_ sender: AnyObject?) {

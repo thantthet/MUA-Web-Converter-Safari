@@ -17,8 +17,11 @@
 		900C41D2237E96E60042EBE9 /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900C41D1237E96E60042EBE9 /* SafariExtensionHandler.swift */; };
 		900C41D4237E96E60042EBE9 /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900C41D3237E96E60042EBE9 /* SafariExtensionViewController.swift */; };
 		900C41D7237E96E60042EBE9 /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 900C41D5237E96E60042EBE9 /* SafariExtensionViewController.xib */; };
-		900C41DA237E96E60042EBE9 /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 900C41D9237E96E60042EBE9 /* script.js */; };
 		900C41DC237E96E60042EBE9 /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 900C41DB237E96E60042EBE9 /* ToolbarItemIcon.pdf */; };
+		900C41E8237E97F80042EBE9 /* converter.js in Resources */ = {isa = PBXBuildFile; fileRef = 900C41E7237E97F80042EBE9 /* converter.js */; };
+		900C41EA237E99010042EBE9 /* parabaik.js in Resources */ = {isa = PBXBuildFile; fileRef = 900C41E9237E99010042EBE9 /* parabaik.js */; };
+		900C41EC237EA79C0042EBE9 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 900C41EB237EA79C0042EBE9 /* style.css */; };
+		900C41F2237EB5F70042EBE9 /* Prefs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900C41F1237EB5F70042EBE9 /* Prefs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,9 +62,12 @@
 		900C41D3237E96E60042EBE9 /* SafariExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionViewController.swift; sourceTree = "<group>"; };
 		900C41D6237E96E60042EBE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
 		900C41D8237E96E60042EBE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		900C41D9237E96E60042EBE9 /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
 		900C41DB237E96E60042EBE9 /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
 		900C41DD237E96E60042EBE9 /* MUAConverter_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MUAConverter_Extension.entitlements; sourceTree = "<group>"; };
+		900C41E7237E97F80042EBE9 /* converter.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = converter.js; sourceTree = "<group>"; };
+		900C41E9237E99010042EBE9 /* parabaik.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = parabaik.js; sourceTree = "<group>"; };
+		900C41EB237EA79C0042EBE9 /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
+		900C41F1237EB5F70042EBE9 /* Prefs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prefs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,9 +134,12 @@
 			children = (
 				900C41D1237E96E60042EBE9 /* SafariExtensionHandler.swift */,
 				900C41D3237E96E60042EBE9 /* SafariExtensionViewController.swift */,
+				900C41F1237EB5F70042EBE9 /* Prefs.swift */,
 				900C41D5237E96E60042EBE9 /* SafariExtensionViewController.xib */,
 				900C41D8237E96E60042EBE9 /* Info.plist */,
-				900C41D9237E96E60042EBE9 /* script.js */,
+				900C41E7237E97F80042EBE9 /* converter.js */,
+				900C41E9237E99010042EBE9 /* parabaik.js */,
+				900C41EB237EA79C0042EBE9 /* style.css */,
 				900C41DB237E96E60042EBE9 /* ToolbarItemIcon.pdf */,
 				900C41DD237E96E60042EBE9 /* MUAConverter_Extension.entitlements */,
 			);
@@ -229,8 +238,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				900C41DC237E96E60042EBE9 /* ToolbarItemIcon.pdf in Resources */,
+				900C41EC237EA79C0042EBE9 /* style.css in Resources */,
 				900C41D7237E96E60042EBE9 /* SafariExtensionViewController.xib in Resources */,
-				900C41DA237E96E60042EBE9 /* script.js in Resources */,
+				900C41EA237E99010042EBE9 /* parabaik.js in Resources */,
+				900C41E8237E97F80042EBE9 /* converter.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				900C41F2237EB5F70042EBE9 /* Prefs.swift in Sources */,
 				900C41D4237E96E60042EBE9 /* SafariExtensionViewController.swift in Sources */,
 				900C41D2237E96E60042EBE9 /* SafariExtensionHandler.swift in Sources */,
 			);
