@@ -30,16 +30,16 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
         
         window.getToolbarItem { (toolbar) in
             let isDisabled = Prefs.getIsDisabled()
-            
+
             if isDisabled {
                 // show "off" badge text
                 toolbar?.setBadgeText("off")
             } else {
-                toolbar?.setBadgeText("on")
+                toolbar?.setBadgeText(nil)
             }
-            
-            validationHandler(true, "")
         }
+        
+        validationHandler(true, "")
     }
     
     override func popoverViewController() -> SFSafariExtensionViewController {
