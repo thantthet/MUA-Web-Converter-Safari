@@ -10,9 +10,8 @@ import SafariServices
 
 class SafariExtensionViewController: SFSafariExtensionViewController {
     
-    @IBOutlet weak var stateLabel: NSTextField!
+    @IBOutlet weak var checkBox: NSButtonCell!
     @IBOutlet weak var noticeLabel: NSTextField!
-    @IBOutlet weak var switchControl: NSSwitch!
     
     private var isDisabled: Bool {
         get {
@@ -30,8 +29,8 @@ class SafariExtensionViewController: SFSafariExtensionViewController {
         return shared
     }()
     
-    @IBAction func didChangeSwitch(_ sender: Any) {
-        isDisabled = switchControl.state == .off
+    @IBAction func didChangeCheck(_ sender: Any) {
+        isDisabled = checkBox.state == .off
         noticeLabel.isHidden = false
         noticeLabel.stringValue = "Reload the page to apply changes."
     }
@@ -49,9 +48,7 @@ class SafariExtensionViewController: SFSafariExtensionViewController {
     }
     
     func updateViewStats() {
-        let text = isDisabled ? "Off" : "On"
-        stateLabel.stringValue = text
-        switchControl.state = isDisabled ? .off : .on
+        checkBox.state = isDisabled ? .off : .on
         
         SFSafariApplication.setToolbarItemsNeedUpdate()
     }
