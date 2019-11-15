@@ -1,0 +1,516 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		900C41BA237E96E50042EBE9 /* MUAConverter.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 900C41B9237E96E50042EBE9 /* MUAConverter.entitlements */; };
+		900C41BC237E96E50042EBE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900C41BB237E96E50042EBE9 /* AppDelegate.swift */; };
+		900C41BF237E96E50042EBE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 900C41BD237E96E50042EBE9 /* Main.storyboard */; };
+		900C41C1237E96E50042EBE9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900C41C0237E96E50042EBE9 /* ViewController.swift */; };
+		900C41C3237E96E50042EBE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 900C41C2237E96E50042EBE9 /* Assets.xcassets */; };
+		900C41CA237E96E60042EBE9 /* MUAConverter Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 900C41C9237E96E60042EBE9 /* MUAConverter Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		900C41CF237E96E60042EBE9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 900C41CE237E96E60042EBE9 /* Cocoa.framework */; };
+		900C41D2237E96E60042EBE9 /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900C41D1237E96E60042EBE9 /* SafariExtensionHandler.swift */; };
+		900C41D4237E96E60042EBE9 /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900C41D3237E96E60042EBE9 /* SafariExtensionViewController.swift */; };
+		900C41D7237E96E60042EBE9 /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 900C41D5237E96E60042EBE9 /* SafariExtensionViewController.xib */; };
+		900C41DA237E96E60042EBE9 /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 900C41D9237E96E60042EBE9 /* script.js */; };
+		900C41DC237E96E60042EBE9 /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 900C41DB237E96E60042EBE9 /* ToolbarItemIcon.pdf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		900C41CB237E96E60042EBE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 900C41AE237E96E50042EBE9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 900C41C8237E96E60042EBE9;
+			remoteInfo = "MUAConverter Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		900C41E3237E96E60042EBE9 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				900C41CA237E96E60042EBE9 /* MUAConverter Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		900C41B6237E96E50042EBE9 /* MUAConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MUAConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		900C41B9237E96E50042EBE9 /* MUAConverter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MUAConverter.entitlements; sourceTree = "<group>"; };
+		900C41BB237E96E50042EBE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		900C41BE237E96E50042EBE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		900C41C0237E96E50042EBE9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		900C41C2237E96E50042EBE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		900C41C4237E96E50042EBE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		900C41C9237E96E60042EBE9 /* MUAConverter Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "MUAConverter Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		900C41CE237E96E60042EBE9 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		900C41D1237E96E60042EBE9 /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
+		900C41D3237E96E60042EBE9 /* SafariExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionViewController.swift; sourceTree = "<group>"; };
+		900C41D6237E96E60042EBE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
+		900C41D8237E96E60042EBE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		900C41D9237E96E60042EBE9 /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
+		900C41DB237E96E60042EBE9 /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
+		900C41DD237E96E60042EBE9 /* MUAConverter_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MUAConverter_Extension.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		900C41B3237E96E50042EBE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		900C41C6237E96E60042EBE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				900C41CF237E96E60042EBE9 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		900C41AD237E96E50042EBE9 = {
+			isa = PBXGroup;
+			children = (
+				900C41B8237E96E50042EBE9 /* MUAConverter */,
+				900C41D0237E96E60042EBE9 /* MUAConverter Extension */,
+				900C41CD237E96E60042EBE9 /* Frameworks */,
+				900C41B7237E96E50042EBE9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		900C41B7237E96E50042EBE9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				900C41B6237E96E50042EBE9 /* MUAConverter.app */,
+				900C41C9237E96E60042EBE9 /* MUAConverter Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		900C41B8237E96E50042EBE9 /* MUAConverter */ = {
+			isa = PBXGroup;
+			children = (
+				900C41B9237E96E50042EBE9 /* MUAConverter.entitlements */,
+				900C41BB237E96E50042EBE9 /* AppDelegate.swift */,
+				900C41BD237E96E50042EBE9 /* Main.storyboard */,
+				900C41C0237E96E50042EBE9 /* ViewController.swift */,
+				900C41C2237E96E50042EBE9 /* Assets.xcassets */,
+				900C41C4237E96E50042EBE9 /* Info.plist */,
+			);
+			path = MUAConverter;
+			sourceTree = "<group>";
+		};
+		900C41CD237E96E60042EBE9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				900C41CE237E96E60042EBE9 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		900C41D0237E96E60042EBE9 /* MUAConverter Extension */ = {
+			isa = PBXGroup;
+			children = (
+				900C41D1237E96E60042EBE9 /* SafariExtensionHandler.swift */,
+				900C41D3237E96E60042EBE9 /* SafariExtensionViewController.swift */,
+				900C41D5237E96E60042EBE9 /* SafariExtensionViewController.xib */,
+				900C41D8237E96E60042EBE9 /* Info.plist */,
+				900C41D9237E96E60042EBE9 /* script.js */,
+				900C41DB237E96E60042EBE9 /* ToolbarItemIcon.pdf */,
+				900C41DD237E96E60042EBE9 /* MUAConverter_Extension.entitlements */,
+			);
+			path = "MUAConverter Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		900C41B5237E96E50042EBE9 /* MUAConverter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 900C41E4237E96E60042EBE9 /* Build configuration list for PBXNativeTarget "MUAConverter" */;
+			buildPhases = (
+				900C41B2237E96E50042EBE9 /* Sources */,
+				900C41B3237E96E50042EBE9 /* Frameworks */,
+				900C41B4237E96E50042EBE9 /* Resources */,
+				900C41E3237E96E60042EBE9 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				900C41CC237E96E60042EBE9 /* PBXTargetDependency */,
+			);
+			name = MUAConverter;
+			productName = MUAConverter;
+			productReference = 900C41B6237E96E50042EBE9 /* MUAConverter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		900C41C8237E96E60042EBE9 /* MUAConverter Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 900C41E0237E96E60042EBE9 /* Build configuration list for PBXNativeTarget "MUAConverter Extension" */;
+			buildPhases = (
+				900C41C5237E96E60042EBE9 /* Sources */,
+				900C41C6237E96E60042EBE9 /* Frameworks */,
+				900C41C7237E96E60042EBE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MUAConverter Extension";
+			productName = "MUAConverter Extension";
+			productReference = 900C41C9237E96E60042EBE9 /* MUAConverter Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		900C41AE237E96E50042EBE9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = MUA;
+				TargetAttributes = {
+					900C41B5237E96E50042EBE9 = {
+						CreatedOnToolsVersion = 11.2;
+					};
+					900C41C8237E96E60042EBE9 = {
+						CreatedOnToolsVersion = 11.2;
+					};
+				};
+			};
+			buildConfigurationList = 900C41B1237E96E50042EBE9 /* Build configuration list for PBXProject "MUAConverter" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 900C41AD237E96E50042EBE9;
+			productRefGroup = 900C41B7237E96E50042EBE9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				900C41B5237E96E50042EBE9 /* MUAConverter */,
+				900C41C8237E96E60042EBE9 /* MUAConverter Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		900C41B4237E96E50042EBE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				900C41BA237E96E50042EBE9 /* MUAConverter.entitlements in Resources */,
+				900C41C3237E96E50042EBE9 /* Assets.xcassets in Resources */,
+				900C41BF237E96E50042EBE9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		900C41C7237E96E60042EBE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				900C41DC237E96E60042EBE9 /* ToolbarItemIcon.pdf in Resources */,
+				900C41D7237E96E60042EBE9 /* SafariExtensionViewController.xib in Resources */,
+				900C41DA237E96E60042EBE9 /* script.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		900C41B2237E96E50042EBE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				900C41C1237E96E50042EBE9 /* ViewController.swift in Sources */,
+				900C41BC237E96E50042EBE9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		900C41C5237E96E60042EBE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				900C41D4237E96E60042EBE9 /* SafariExtensionViewController.swift in Sources */,
+				900C41D2237E96E60042EBE9 /* SafariExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		900C41CC237E96E60042EBE9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 900C41C8237E96E60042EBE9 /* MUAConverter Extension */;
+			targetProxy = 900C41CB237E96E60042EBE9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		900C41BD237E96E50042EBE9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				900C41BE237E96E50042EBE9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		900C41D5237E96E60042EBE9 /* SafariExtensionViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				900C41D6237E96E60042EBE9 /* Base */,
+			);
+			name = SafariExtensionViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		900C41DE237E96E60042EBE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		900C41DF237E96E60042EBE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		900C41E1237E96E60042EBE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "MUAConverter Extension/MUAConverter_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YQ4W4QMX9D;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "MUAConverter Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.mua.MUAConverter-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		900C41E2237E96E60042EBE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "MUAConverter Extension/MUAConverter_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YQ4W4QMX9D;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "MUAConverter Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.mua.MUAConverter-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		900C41E5237E96E60042EBE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MUAConverter/MUAConverter.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = YQ4W4QMX9D;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = MUAConverter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.mua.MUAConverter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		900C41E6237E96E60042EBE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MUAConverter/MUAConverter.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = YQ4W4QMX9D;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = MUAConverter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.mua.MUAConverter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		900C41B1237E96E50042EBE9 /* Build configuration list for PBXProject "MUAConverter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				900C41DE237E96E60042EBE9 /* Debug */,
+				900C41DF237E96E60042EBE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		900C41E0237E96E60042EBE9 /* Build configuration list for PBXNativeTarget "MUAConverter Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				900C41E1237E96E60042EBE9 /* Debug */,
+				900C41E2237E96E60042EBE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		900C41E4237E96E60042EBE9 /* Build configuration list for PBXNativeTarget "MUAConverter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				900C41E5237E96E60042EBE9 /* Debug */,
+				900C41E6237E96E60042EBE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 900C41AE237E96E50042EBE9 /* Project object */;
+}
