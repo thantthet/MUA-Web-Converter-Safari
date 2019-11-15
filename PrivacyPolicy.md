@@ -4,4 +4,4 @@ built the MUA Unicode Web Converter app as an Open Source app. This SERVICE is p
 
 # Information Collection
 
-The app does collect any information from you.
+The app does not collect any information from you.
