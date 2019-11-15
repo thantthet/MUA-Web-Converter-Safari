@@ -35,7 +35,7 @@
                 </textField>
                 <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="YaT-fa-oAf">
                     <rect key="frame" x="8" y="10" width="239" height="32"/>
-                    <textFieldCell key="cell" selectable="YES" alignment="center" title="Powered by: Myanmar Unicode Area fb.com/groups/mmUnicode" id="bz6-MQ-mQ6">
+                    <textFieldCell key="cell" alignment="center" title="Powered by: Myanmar Unicode Area fb.com/groups/mmUnicode" id="bz6-MQ-mQ6">
                         <font key="font" metaFont="system"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
